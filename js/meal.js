@@ -1,3 +1,13 @@
+let showdata;
+function myFunction() {
+  showdata=setTimeout(showPage, 3000);
+}
+myFunction();
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
 const searchFood = async () => {
     const mealField = document.getElementById('search-field');
     const searchText = mealField.value;
